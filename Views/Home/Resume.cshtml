@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Resume";
+}
+
+<!-- RESUME SECTION -->
+ <section id="Resume" class="m-4 row justify-content-md-center section-title">
+  <div class="BoxAttributes"></div>
+  <h2>My Resume</h2>
+
+ <div style="text-align: center; color: aqua;">
+  <a href="~/assets/img/AidanMcQuillanResume(8-18-23).pdf" target="_blank">View My Resume</a>
+  <hr>
+</div>
+
+<!-- Hide the iframe on mobile displays -->
+<style>
+    @* Had to remove the @media because it was erroring out*@
+   (max-width: 768px) {
+    iframe {
+      display: none;
+    }
+  }
+
+  .mobile-coming-soon {
+      text-align: center;
+      display: none;
+    }
+  </style>
+
+  <p class="mobile-coming-soon">Mobile Resume Coming Soon</p>
+
+</style>
+
+
+  <iframe src="~/assets/img/AidanMcQuillanResume(8-18-23).pdf" target="blank" frameborder="0" style="width: 80%; max-width: 100%; height: 800px;"></iframe>
+  <!-- Adjust the width and height values as needed -->
+
+</section>
+<hr>
+
